@@ -171,12 +171,12 @@ button:hover {
 }
 .subheading{
     width: 100%;
-    font: 1.4em sans-serif;
+    font: 1.4em;
     /* text-align: center; */
 }
 
 .paragraph{
-    font: 1.4em sans-serif;
+    font: 1.4em;
 }
 
 #services{
@@ -184,5 +184,86 @@ button:hover {
     margin: 20px;
     padding-top: 20px;
     padding-bottom: 20px;
+}
+
+.container-about{
+    border: 1px solid black;
+}
+
+.about-us{
+    display: flex;
+    justify-content: center;
+    margin-top: 150px;
+    font: 2em sans-serif;
+    border: 1px solid black;
+}
+
+.home-box{
+    display: flex;
+    justify-content: center;
+}
+
+.home-box-h4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 130px;
+    height: 50px;
+    border: 1px solid black;
+}
+
+.actual-about-container{
+    display: flex;
+    border: 1px solid black;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+}
+
+.actual-about{
+    border: 1px solid red;
+}
+
+.commited{
+    font: 5em;
+}
+.par-1{
+    font: 1.9em;
+}
+
+.checkmark-img{
+    border: 1px solid black;
+    width: 40px;
+    height: 40px;
+}
+.list-about-us{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+.list-about-us-2{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+
+.list-about-us-cont{
+    font: 1.8em;
+}
+
+.container-wedo{
+    background-color: rgb(38, 38, 105);
+}
+.content-wedo{
+    width: 300px;
+    margin-left: 300px;
+    display: flex;
+    flex-direction: column;
+    background-color: red;
+    border: 1px solid black;
+}
+
+.wearebest{
+    font-size: 1.8em;
 }
   

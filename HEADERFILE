@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Hello!</title>
+    <link rel="stylesheet" href="index.css" type="text/css" />
+    <style type="text/css">body { width: auto; }</style>
+    <meta charset="UTF-8" />
+</head>
+<body>
+    <header>
+        <img class="logo" src="./autorix-logo.png">
+        <nav>
+            <ul class="nav_links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Team</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <a class="cta" href="#"><button>Get A Quote</button></a>
+    </header>
+</body>
+</html>
