@@ -21,7 +21,7 @@ header {
     align-items: center;
     padding: 30px 10%;
     /* padding-bottom: 150px; */
-    border: 1px solid black; /* for guidelines */
+    /* for guidelines */
 }
 
 .logo {
@@ -61,12 +61,12 @@ button:hover {
     display: flex;
     flex-direction: row;
     margin: 50px 100px;
-    border: 1px solid black; /* for guidelines */ 
+    /* for guidelines */ 
 }
 
 .icons{
     margin: 20px;
-    border: 1px solid black; /* for guidelines */
+    /* for guidelines */
 }
 
 .icon_links {
@@ -162,7 +162,7 @@ button:hover {
 }
 
 .hero {
-    border: 1px solid black; /* for guidelines */
+    /* for guidelines */
     margin: 10px;
 }
 
@@ -186,15 +186,73 @@ button:hover {
     padding-bottom: 20px;
 }
 
+.experience{
+    border: 1px solid black;
+}
+.experience-title{
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    text-align: center;
+}
+.experience-container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.experience-container-box{
+    text-align: center;
+    width: 352px;
+    border: 1px solid black;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 1);
+    transition: box-shadow 0.3s ease;
+}
+.box1-blog{
+    font-size: 30px;
+    margin: 10px;
+}
+.pbox1{
+    font-size: 20px;
+    margin: 5px;
+}
+
+.read-more{
+    display: block;
+    color: red;
+    margin: 20px;
+}
+
+.footer-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+}
+
+.footer-box1{
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 300px;
+    margin-bottom: 300px;
+    height: 250px;
+    width: 250px;
+}
+/* END OF INDEX.HTML */
+/* END OF MAIN PAGE*/
+/* START OF ABOUT PAGE */
+
 .container-about{
     border: 1px solid black;
+    margin-bottom: 150px;
 }
 
 .about-us{
     display: flex;
     justify-content: center;
     margin-top: 150px;
-    font: 2em sans-serif;
+    font-size: 2.8em;
     border: 1px solid black;
 }
 
@@ -207,63 +265,38 @@ button:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 130px;
+    width: 200px;
     height: 50px;
     border: 1px solid black;
+    border-radius: 30px;
 }
 
-.actual-about-container{
+.commited {
     display: flex;
-    border: 1px solid black;
-    justify-content: center;
-    align-items: center;
-    height: 500px;
-}
-
-.actual-about{
     border: 1px solid red;
+    justify-content: center;
 }
 
-.commited{
-    font: 5em;
-}
-.par-1{
-    font: 1.9em;
-}
-
-.checkmark-img{
+.commitedbox{
     border: 1px solid black;
-    width: 40px;
-    height: 40px;
-}
-.list-about-us{
-    display: flex;
-    justify-content: space-evenly;
-    flex-direction: row;
-}
-.list-about-us-2{
-    display: flex;
-    justify-content: space-evenly;
-    flex-direction: row;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.8);
+    text-align: center;
 }
 
-.list-about-us-cont{
-    font: 1.8em;
+.commitedbox img {
+    width: 400px;
+    height: 400px;
 }
 
-.container-wedo{
-    background-color: rgb(38, 38, 105);
-}
-.content-wedo{
-    width: 300px;
-    margin-left: 300px;
-    display: flex;
-    flex-direction: column;
-    background-color: red;
-    border: 1px solid black;
+.commitedbox h1{
+    font-size: 2.8em;
+    margin: 40px;
 }
 
-.wearebest{
-    font-size: 1.8em;
+.commitedbox p{
+    font-size: 1.5em;
+    margin-left: 40px;
 }
+
+/* END OF ABOUT PAGE*/
   
