@@ -277,6 +277,10 @@ button:hover {
     justify-content: center;
 }
 
+.commited-sub {
+    display: flex;
+}
+
 .commitedbox{
     border: 1px solid black;
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.8);
@@ -299,4 +303,35 @@ button:hover {
 }
 
 /* END OF ABOUT PAGE*/
+/* START OF SERVICES PAGE */
+
+.services {
+    
+    border: 1px solid black;
+}
+
+.services-title{
+    display: flex;
+    border: 1px solid red;
+    justify-content: center;
+    padding: 30px;
+}
+
+.services-box{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#services1{
+    margin-bottom: 40px;
+}
+
+.services-box1{
+    border: 1px solid blue;
+    display: flex;
+}
+
+.imgbox1 {
+    margin-right: 20px;
+}
   
