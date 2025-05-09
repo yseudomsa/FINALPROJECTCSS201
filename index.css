@@ -432,16 +432,28 @@ button:hover {
 
 
 /* START OF SERVICES PAGE */
+.main-services {
+    background-color: rgba(55, 53, 84, 0.9);
+    background-image: url('images/services.jpg');
+    background-blend-mode: multiply;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
 
 .services {
     border: 1px solid black;
+    height: max-content;
+    padding: 70px;
 }
 
 .services-title{
-    display: flex;
-    border: 1px solid red;
-    justify-content: center;
-    padding: 30px;
+    text-align: center;
+    padding-bottom: 30px;
+    font-size: 2em;
 }
 
 .services-box{
