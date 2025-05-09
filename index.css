@@ -65,12 +65,12 @@ header {
 }
 
 .nav_links li :hover {
-    color: #0088a9;
+    color: #0675b2;
 }
 
 button {
     padding: 10px 25px;
-    background-color: rgba(0, 136, 169, 1);
+    background-color: #0675b2;
     box-shadow: -3px 3px #000;
     border: none;
     border-radius: 50px;
@@ -78,8 +78,8 @@ button {
 }
 
 button:hover {
-    background-color: rgb(1, 109, 136);
-    box-shadow: -1px 1px 2px #000;
+    background-color: #066192;
+    box-shadow: -1px 1px #000;
 }
 
 .main-container{
