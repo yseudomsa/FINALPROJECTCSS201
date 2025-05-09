@@ -47,6 +47,7 @@ header {
 
 .logo {
     cursor: pointer;
+    width: 200px;
 }
 
 .nav_links{
@@ -214,10 +215,10 @@ button:hover {
 }
 
 #services{
-    background-color: red;
+    background-color: #bc0300;
     margin: 20px 0px 0px;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
     width: max-content;
     font-weight: bold;
     box-shadow: none;
@@ -241,45 +242,76 @@ button:hover {
     }
 }
 
-.experience{
-    padding-top: 100px; 
-    border: 1px solid black;
+.experience {
+    padding: 50px; 
+    border-top: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    height: max-content;
 }
 
-.experience-title{
+.experience-title {
     margin: 20px;
-    display: flex;
     justify-content: center;
     font-size: 30px;
     text-align: center;
 }
 
-.experience-container{
+.experience-container {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    gap: 20px;
+    height: max-content;
 }
 
-.experience-container-box{
+.experience-container-box {
     text-align: center;
     width: 352px;
+    height: max-content;
     border: 1px solid black;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 1);
     transition: box-shadow 0.3s ease;
 }
-.box1-blog{
+
+.box-blog {
     font-size: 30px;
-    margin: 10px;
-}
-.pbox1{
-    font-size: 20px;
-    margin: 5px;
+    margin: 15px;
 }
 
-.read-more{
+.pbox {
+    font-size: 18px;
+    margin: 5px 20px;
+}
+
+.read-more {
     display: block;
-    color: red;
-    margin: 20px;
+    color: #fff;
+    background-color: #bc0300;
+    width: fit-content;
+    padding: 5px 10px;
+    border: #ae223c;
+    border-radius: 10px;
+    margin: 20px auto;
+    text-shadow: none;
+    font-weight: 500;
+}
+
+.read-more:hover {
+    animation: blink 1s ease-in-out infinite alternate !important;
+}
+
+@keyframes blink {
+    from {
+        background-color: red;
+        box-shadow: 0px 0px 10px red;
+    }
+    to {
+        background-color: #bc0300;
+        box-shadow: 0px 0px 5px red;
+    }
 }
 
 .footer-container{
