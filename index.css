@@ -243,17 +243,17 @@ button:hover {
 }
 
 .experience {
-    padding: 50px; 
+    padding: 70px 0px; 
     border-top: 1px solid black;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 20px;
     align-items: center;
     height: max-content;
 }
 
 .experience-title {
-    margin: 20px;
+    margin-bottom: 20px;
     justify-content: center;
     font-size: 30px;
     text-align: center;
@@ -318,19 +318,24 @@ button:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid black;
+    gap: 50px;
+    color: #fff;
+    border-top: 1px solid black;
+    background-color: #2b2a3f;
 }
 
-.footer-box1{
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-top: 300px;
-    margin-bottom: 0px;
+.footer-box1 {
+    /* border: 1px solid black; */
+    margin-top: 200px;
+    margin-bottom: 20px;
     height: 250px;
-    width: 250px;
+    width: max-content;
 }
+
 /* END OF INDEX.HTML */
 /* END OF MAIN PAGE*/
+
+
 /* START OF ABOUT PAGE */
 
 .container-about{
