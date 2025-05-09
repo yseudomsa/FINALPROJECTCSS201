@@ -46,8 +46,8 @@
                 <img src="images/service-offer-img1.png">
               </div>
               <h5 class="box-blog">Brake Repair</h5>
-              <p class="pbox">Quis autem velaum iure reare aenderit rui in ea roluptate velit esse ruam moles nulla</p>
-              <a class="read-more" href="about.html">READ MORE</a>
+              <p class="pbox">We inspect, adjust, and replace worn brake parts to ensure your vehicle stops safely and reliably every time.</p>
+              <a class="read-more" href="about.html">Send Email</a>
             </div>
       
             <div class="experience-container-box">
@@ -55,16 +55,16 @@
                 <img src="images/service-offer-img2.png">
               </div>
               <h5 class="box-blog">Tire Repair</h5>
-              <p class="pbox">Ruis autem velaum iure reare aenderit rui in ea roluptate velit esse ruam moles nulla</p>
-              <a href="about.html" class="read-more">READ MORE</a>
+              <p class="pbox">We provide comprehensive tire services, including patching, balancing, and replacement for smooth and safe rides.</p>
+              <a href="about.html" class="read-more">Send Email</a>
             </div>
             <div class="experience-container-box">
               <div class="imgbox3">
                 <img src="images/service-offer-img3.png">
               </div>
               <h5 class="box-blog">Engine Repair</h5>
-              <p class="pbox">Suis autem velaum iure reare aenderit rui in ea roluptate velit esse ruam moles nulla</p>
-              <a class="read-more" href="about.html">READ MORE</a>
+              <p class="pbox">We provide expert engine diagnostics, repairs, and maintenance to keep your engine running smoothly.</p>
+              <a class="read-more" href="about.html">Send Email</a>
             </div>
           </div>
 
@@ -74,24 +74,24 @@
                 <img src="images/service-offer-img4.png">
               </div>
               <h5 class="box-blog">Battery Repair</h5>
-              <p class="pbox">Quis autem velaum iure reare aenderit rui in ea roluptate velit esse ruam moles nulla</p>
-              <a class="read-more" href="about.html">READ MORE</a>
+              <p class="pbox">Our battery services ensure reliable starting power, from testing to installation, for optimal performance.</p>
+              <a class="read-more" href="about.html">Send Email</a>
             </div>
             <div class="experience-container-box">
               <div class="imgbox2">
                 <img src="images/service-offer-img5.png">
               </div>
               <h5 class="box-blog">Steering Repair</h5>
-              <p class="pbox">Ruis autem velaum iure reare aenderit rui in ea roluptate velit esse ruam moles nulla</p>
-              <a href="about.html" class="read-more">READ MORE</a>
+              <p class="pbox">We restore steering precision and safety, ensuring smooth handling and a responsive driving experience.</p>
+              <a href="about.html" class="read-more">Send Email</a>
             </div>
             <div class="experience-container-box">
               <div class="imgbox3">
                 <img src="images/service-offer-img6.png">
               </div>
               <h5 class="box-blog">Car Washing</h5>
-              <p class="pbox">Suis autem velaum iure reare aenderit rui in ea roluptate velit esse ruam moles nulla</p>
-              <a class="read-more" href="about.html">READ MORE</a>
+              <p class="pbox">We offer thorough car washing services, removing dirt and grime for a clean, shining finish. Get your car cleaner!</p>
+              <a class="read-more" href="about.html">Send Email</a>
             </div>
           </div>
         </div>
@@ -127,5 +127,39 @@
             </div>
         </div>
     </section>
+    <!-- POP UP-->
+<div id="servicePopup" class="service-popup-overlay">
+  <div class="service-popup-card">
+    <div class="service-popup-banner">
+      <span class="service-banner-text">EMAIL</span>
+      <span class="service-banner-text">JOIN US</span>
+    </div>
+    <span class="service-popup-title">MEKANIK.CO</span>
+    <p class="service-popup-subtitle">Talk Over Email!</p>
+    <form class="service-popup-form">
+      <input placeholder="Your Email" type="email" required />
+      <button class="service-sign-up" type="submit">Send Email</button>
+    </form>
+  </div>
+</div>
+
+  <!-- JS -->
+<script>
+  const servicePopup = document.getElementById('servicePopup');
+  const readMoreButtons = document.querySelectorAll('.read-more');
+
+  readMoreButtons.forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      e.preventDefault();
+      servicePopup.classList.add('show');
+    });
+  });
+
+  servicePopup.addEventListener('click', (e) => {
+    if (e.target === servicePopup) {
+      servicePopup.classList.remove('show');
+    }
+  });
+</script>
 </body>
 </html>
