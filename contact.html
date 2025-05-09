@@ -7,8 +7,9 @@
     <meta charset="UTF-8" />
 </head>
 <body>
+ <main class="main-services">
     <header>
-        <img class="logo" src="images/autorix-logo.png">
+        <img class="logo" src="images/logo.png">
         <nav>
             <ul class="nav_links">
                 <li><a href="index.html">Home</a></li>
@@ -24,43 +25,132 @@
     <section class="section-container-services">
         <div class="container-about">
             <div class="about-us">
-                <h1>Contact Us</h1>
+                <h1>Our Contact</h1>
             </div>
             <div class="home-box">
-                <h4 class="home-box-h4"><strong>HOME // CONTACT</strong></h4>
+                <h4 class="home-box-h4">HOME &emsp13;<strong>// CONTACT</strong></h4>
             </div>
         </div>
     </section>
-    <section class="footer">
+  </main>
+
+
+    <section class="ContactBody">
+
+      <div class="MapContainer"><div class="MapLoc"><img src="images/location.png"></div></div>
+
+      <div class="ContactInfo">
+        <div class="LeftCont">
+          <div class="LeftContUpper"><p>// OUR INFO</p><br><h1>CONTACT INFO</h1></div>
+
+          <div class="LeftContLower"><img src="images/pin-location-2-icon-1534x2048-t8eet69l.png"><div class="LeftContLowerDetails"><h3>LOCATION</h3>
+            <p>Carlock Street<br>
+            Cebu City, 6000 Cebu</p>
+          </div> </div>
+
+          <div class="LeftContLower"><img src="images/phone-circle.png"><div class="LeftContLowerDetails"><h3>PHONE</h3>
+            <p>+63 987 546 3321
+            <br> +123 31232 31231</p>
+          </div></div>
+
+          <div class="LeftContLower"><img src="images/email-icon--clipart-best-22.png"><div class="LeftContLowerDetails"><h3>EMAIL</h3>
+            <p>kargadorGangz@gmail.com<br>
+            info@mekanik.co</p>
+          </div></div>
+          
+      </div>
+    
+        <div class="RightCont">
+          <div class="RightContUpper"><p>// GET IN TOUCH</p><h1>SEND US A MESSAGE</h1></div>
+
+          <div class="contact-form">
+            <form>
+              <div class="input-row">
+                <input type="text" placeholder="Name">
+                <input type="text" placeholder="Phone">
+              </div>
+              <div class="input-row">
+                <input type="email" placeholder="Email">
+                <input type="text" placeholder="Subject">
+              </div>
+              <textarea placeholder="Message"></textarea>
+              
+              <div class="submit-btn">
+                <button type="button" id = "triggerPopup">
+                  SUBMIT NOW <span class="arrow">➝</span>
+                </button>
+              </div>
+            </form>
+          </div>
+          
+      </div>
+        
+      </div>
+
+    </section>
+
+   <section class="footer">
         <div class="footer-container">
-          <div class="footer-box1">
-            <img src="images/autorix-logo.png">
-            <br>
-            <br>
-            <p>Rerum necessitatibus saepe eveniet aut et voluptates repudiandae sint et molestiae non recusandae.</p>
-          </div>
-          <div class="footer-box1">
-            <h2>OPENING HOURS</h2>
-            <br>
-            <p>Monday - Saturday</p>
-            <p>12:00 - 12:00</p>
-            <br>
-            <p>Sunday - Thursday</p>
-            <p>12:00 - 12:00</p>
-            <br>
-            <p>Friday - Saturday</p>
-            <p>12:00 - 12:00</p>
-          </div>
-          <div class="footer-box1">
-            <h2>CONTACT INFO</h2>
-            <br>
-            <p>+63 9875463321</p>
-            <br>
-            <p>info@mekanik.co</p>
-            <br>
-            <p>N Bacalso Ave.</p>
-          </div>
+            <div class="footer-box1">
+                <img src="images/logo.png" class="logo">
+                <br>
+                <br>
+                <p>Rerum necessitatibus saepe<br> eveniet aut et voluptates<br>
+                    repudiandae sint et molestiae<br> non recusandae.</p>
+            </div>
+            <div class="footer-box1">
+                <h2>OPENING HOURS</h2>
+                <br>
+                <p>Monday - Saturday</p>
+                <p>12:00 - 12:00</p>
+                <br>
+                <p>Sunday - Thursday</p>
+                <p>12:00 - 12:00</p>
+                <br>
+                <p>Friday - Saturday</p>
+                <p>12:00 - 12:00</p>
+            </div>
+            <div class="footer-box1">
+                <h2>CONTACT INFO</h2>
+                <br>
+                <p>+63 9875463321</p>
+                <br>
+                <p>info@mekanik.co</p>
+                <br>
+                <p>N Bacalso Ave.</p>
+            </div>
         </div>
-      </section>
+    </section>
+    <!-- SERVICE POPUP -->
+<div id="contactPopup" class="service-popup-overlay">
+  <div class="service-popup-card">
+    <div class="service-popup-banner">
+      <span class="service-banner-text">EMAIL</span>
+      <span class="service-banner-text">JOIN US</span>
+    </div>
+    <span class="service-popup-title">MEKANIK.CO</span>
+    <p class="service-popup-subtitle">Talk Over Email!</p>
+    <form class="service-popup-form">
+      <input placeholder="Your Email" type="email" required />
+      <button class="service-sign-up" type="submit">Send Email Now ! ! ! !</button>
+    </form>
+  </div>
+</div>
+<script>
+  const contactPopup = document.getElementById('contactPopup');
+  const popupTriggerBtn = document.getElementById('triggerPopup');
+
+  popupTriggerBtn.addEventListener('click', (e) => {
+    e.preventDefault();
+    contactPopup.classList.add('show');
+  });
+
+  contactPopup.addEventListener('click', (e) => {
+    if (e.target === contactPopup) {
+      contactPopup.classList.remove('show');
+    }
+  });
+</script>
+
 </body>
 </html>
