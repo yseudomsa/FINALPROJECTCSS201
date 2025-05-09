@@ -187,6 +187,7 @@ button:hover {
 }
 
 .experience{
+    padding-top: 100px; 
     border: 1px solid black;
 }
 .experience-title{
@@ -235,7 +236,7 @@ button:hover {
     margin-left: 20px;
     margin-right: 20px;
     margin-top: 300px;
-    margin-bottom: 300px;
+    margin-bottom: 0px;
     height: 250px;
     width: 250px;
 }
@@ -275,6 +276,7 @@ button:hover {
     display: flex;
     border: 1px solid red;
     justify-content: center;
+    padding-top: 150px;
 }
 
 .commited-sub {
@@ -302,6 +304,21 @@ button:hover {
     margin-left: 40px;
 }
 
+.bchoice{
+    display: flex;
+    border: 1px solid red;
+    justify-content: center;
+    padding-top: 150px;
+}
+.bchoice-sub{
+    display: flex;
+    border: 1px solid black;
+
+}
+.bchoicebox img {
+    width: 400px;
+    height: 400px;
+}
 /* END OF ABOUT PAGE*/
 /* START OF SERVICES PAGE */
 
