@@ -1,27 +1,48 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Montserrat', 'Poppins', sans-serif;
 }
+
 body {
-    background-color: blanchedalmond;
+    background-color: #fff;
     opacity: 3;
 }
+
 li, a, button{
-    font-family: Arial, Helvetica, sans-serif;
     font-size: 1.2rem;
-    color: black;
+    color: #fff;
+    text-shadow: 1px 1px 2px #000;
     text-decoration: none;
+
+    svg {
+        color: #000;
+    }
 }
 
 header {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
-    padding: 30px 10%;
-    /* padding-bottom: 150px; */
+    padding: 50px 0px;
+    box-shadow: 0 0 4px 0 #00000014, 0 2px 4px 0 #0000001f;
+    color: #fff;
+    height: 80px;
     /* for guidelines */
+}
+
+.main-page {
+    background-color: rgba(55, 53, 84, 0.8);
+    background-image: url('images/bgimg.jpg');
+    background-blend-mode: multiply;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    overflow-x: hidden;
 }
 
 .logo {
@@ -39,6 +60,7 @@ header {
 
 .nav_links li a {
     transition: all 0.3s ease 0s;
+    font-size: 18px;
 }
 
 .nav_links li :hover {
@@ -48,19 +70,25 @@ header {
 button {
     padding: 10px 25px;
     background-color: rgba(0, 136, 169, 1);
+    box-shadow: -3px 3px #000;
     border: none;
     border-radius: 50px;
     cursor: pointer;
 }
 
 button:hover {
-    background-color: rgba(0, 136, 169, 0.4);
+    background-color: rgb(1, 109, 136);
+    box-shadow: -1px 1px 2px #000;
 }
 
 .main-container{
     display: flex;
     flex-direction: row;
-    margin: 50px 100px;
+    margin: 0px 100px;
+    height: 90vh;
+    align-items: center;
+    color: #fff;
+    text-shadow: 1px 1px 3px #000;
     /* for guidelines */ 
 }
 
@@ -79,9 +107,7 @@ button:hover {
     display: flex;
     flex-direction: column;
     list-style: none;
-    height: 250px;
     width: 100%;
-    font-family: "Poppins", sans-serif;
     justify-content: center;
 }
   
@@ -90,9 +116,9 @@ button:hover {
     background: #fff;
     border-radius: 50%;
     margin: 10px;
-    width: 50px;
-    height: 50px;
-    font-size: 18px;
+    width: 40px;
+    height: 40px;
+    font-size: 14px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -129,7 +155,7 @@ button:hover {
 }
   
 .wrapper .icon:hover .tooltip {
-    top: -45px;
+    top: -35px;
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
@@ -164,32 +190,62 @@ button:hover {
 .hero {
     /* for guidelines */
     margin: 10px;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    /* border: 1px solid black; */
 }
 
 .heading{
-    font-size: 4em;
+    font-size: 3em;
 }
+
 .subheading{
     width: 100%;
-    font: 1.4em;
+    font-size: 1.3em;
+    font-weight: 300;
     /* text-align: center; */
 }
 
 .paragraph{
-    font: 1.4em;
+    font-size: 1.2em;
+    font-weight: 300;
 }
 
 #services{
     background-color: red;
-    margin: 20px;
+    margin: 20px 0px 0px;
     padding-top: 20px;
     padding-bottom: 20px;
+    width: max-content;
+    font-weight: bold;
+    box-shadow: none;
+
+    &:hover {
+        box-shadow: 0px 0px 9px red;
+    }
+}
+
+#car {
+    right: 0;
+    bottom: 0;
+    width: 850px;
+    position: absolute;
+    transform: translateX(200px);
+    z-index: 1;
+
+    &:hover {
+        transition: transform 1s;
+        transform: translateX(100px);
+    }
 }
 
 .experience{
     padding-top: 100px; 
     border: 1px solid black;
 }
+
 .experience-title{
     margin: 20px;
     display: flex;
@@ -197,6 +253,7 @@ button:hover {
     font-size: 30px;
     text-align: center;
 }
+
 .experience-container{
     display: flex;
     justify-content: space-evenly;
